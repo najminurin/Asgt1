@@ -44,7 +44,7 @@ public class Task{
         this.category = category;
     }
 
-    public void setDueDate(Date dueDate){
+    public void setDueDate(LocalDate dueDate){
         this.dueDate = dueDate;
     }
 
