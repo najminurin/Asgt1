@@ -1,5 +1,4 @@
-#### Title
-“Implementing Task Management with Exception Handling”
+# Implementing Task Management with Exception Handling
 
 ### Learning Outcome
 - CLO2: Implement object-oriented programming systems to address a variety of computing-related challenges, demonstrating problem-solving skills.
