@@ -1,1 +1,0 @@
-zapan babi bodoh sial
