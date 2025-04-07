@@ -1,2 +1,1 @@
-
-hdtfjuyfuytgf
+zapan babi bodoh sial
