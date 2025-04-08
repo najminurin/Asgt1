@@ -1,4 +1,5 @@
-import java.util.LocalDate;
+import java.util.*;
+import java.time.LocalDate;
 public class Task{
     private String taskName ;
     private String category;
@@ -6,13 +7,13 @@ public class Task{
     private String priority;
 
     public Task(){
-       taskName = ' ';
-       category = ' ';
-       dueDate = 0 ;
-       priority = ' ';
+       taskName = " ";
+       category = " ";
+       dueDate = null ;
+       priority = " ";
     }
 
-    public void Task(String taskName , String category , LocalDate dueDate , String priority){
+    public Task(String taskName , String category , LocalDate dueDate , String priority){
          this.taskName = taskName;
          this.category = category;
          this.dueDate = dueDate;
