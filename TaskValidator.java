@@ -4,7 +4,8 @@ public class TaskValidator {
             return "Task cannot be empty!!!";
         }
         if (category.getCategory() == null || task.getCategory().trim().isEmpty()){
-            return "zapan babi";
+            return "zapan babin";
         }
+        return 
     }
 }
