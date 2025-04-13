@@ -6,7 +6,7 @@ public class TaskValidator {
         if (task.getCategory() == null || task.getCategory().trim().isEmpty()) {
             return "Task category cannot be empty!";
         }
-        // You can add more validation if needed (e.g. due date, priority, etc.)
+        
         return "Task is valid.";
     }
 }
