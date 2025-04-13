@@ -2,6 +2,11 @@ import java.time.LocalDate;
 
 public class TaskValidator {
     public static String validateTask(Task task) {
+        // Check if task is null
+        if (task == null) {
+            return "Task cannot be null!";
+        }
+
         // Validate task name
         if (task.getTaskName() == null || task.getTaskName().trim().isEmpty()) {
             return "Task name cannot be empty!";
@@ -24,9 +29,9 @@ public class TaskValidator {
         if (task.getPriority() == null || task.getPriority().trim().isEmpty()) {
             return "Priority cannot be empty!";
         }
-        if (!task.getPriority().equalsIgnoreCase("High") && 
-            !task.getPriority().equalsIgnoreCase("Medium") && 
-            !task.getPriority().equalsIgnoreCase("Low")) {
+        
+        String priority = task.getPriority().toLowerCase();
+        if (!priority.equals("high") && !priority.equals("medium") && !priority.equals("low")) {
             return "Priority must be High, Medium, or Low!";
         }
         
