@@ -6,31 +6,31 @@ public class TaskManagerApp {
         System.out.println("----------------------------");
 
         // Test valid task
-        Task validTask = new Task("ASGT 1", "OOP", LocalDate.now().plusDays(7), "High");
+        Task validTask = new Task("ASGT 1", "OOP", LocalDate.now().plusDays(7), "High", "Done");
         System.out.println(validTask.toString());
         System.out.println("Validation Result: " + TaskValidator.validateTask(validTask));
         System.out.println("----------------------------");
 
         // Test empty task name
-        Task emptyNameTask = new Task("", "OOP", LocalDate.now().plusDays(7), "High");
+        Task emptyNameTask = new Task("", "OOP", LocalDate.now().plusDays(7), "High", "Done");
         System.out.println(emptyNameTask.toString());
         System.out.println("Validation Result: " + TaskValidator.validateTask(emptyNameTask));
         System.out.println("----------------------------");
 
         // Test empty category
-        Task emptyCategoryTask = new Task("ASGT 1", "", LocalDate.now().plusDays(7), "Medium");
+        Task emptyCategoryTask = new Task("ASGT 1", "", LocalDate.now().plusDays(7), "Medium", "Done") ;
         System.out.println(emptyCategoryTask.toString());
         System.out.println("Validation Result: " + TaskValidator.validateTask(emptyCategoryTask));
         System.out.println("----------------------------");
 
         // Test past due date
-        Task pastDateTask = new Task("ASGT 1", "OOP", LocalDate.now().minusDays(1), "Low");
+        Task pastDateTask = new Task("ASGT 1", "OOP", LocalDate.now().minusDays(1), "Low", "Done") ;
         System.out.println(pastDateTask.toString());
         System.out.println("Validation Result: " + TaskValidator.validateTask(pastDateTask));
         System.out.println("----------------------------");
 
         // Test invalid priority
-        Task invalidPriorityTask = new Task("ASGT 1", "OOP", LocalDate.now().plusDays(7), "Urgent");
+        Task invalidPriorityTask = new Task("ASGT 1", "OOP", LocalDate.now().plusDays(7), "Urgent", "Done") ;
         System.out.println(invalidPriorityTask.toString());
         System.out.println("Validation Result: " + TaskValidator.validateTask(invalidPriorityTask));
         System.out.println("----------------------------");

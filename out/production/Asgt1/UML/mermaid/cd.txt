@@ -1,0 +1,29 @@
+classDiagram
+    class Task {
+        -String taskName
+        -String category
+        -LocalDate dueDate
+        -String priority
+        +Task()
+        +Task(String taskName, String category, LocalDate dueDate, String priority)
+        +getTaskName() String
+        +setTaskName(String taskName) void
+        +getCategory() String
+        +setCategory(String category) void
+        +getDueDate() LocalDate
+        +setDueDate(LocalDate dueDate) void
+        +getPriority() String
+        +setPriority(String priority) void
+        +toString() String
+    }
+    
+    class TaskValidator {
+        +validateTask(Task task) String$
+    }
+    
+    class TaskManagerApp {
+        +main(String[] args) void$
+    }
+    
+    TaskManagerApp --> Task : creates and uses
+    TaskManagerApp --> TaskValidator : uses for validation
